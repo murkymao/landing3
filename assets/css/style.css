@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "GothamProLight";
+    src: url("../fonts/GothamProLight/GothamProLight.eot");
+    src: url("../fonts/GothamProLight/GothamProLight.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/GothamProLight/GothamProLight.woff") format("woff"),
+    url("../fonts/GothamProLight/GothamProLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.container{
+    width: 1400px;
+    height: 2000px;
+
+}
+
+header {
+    width: 1440px;
+    height: 900px;
+    margin: 0 auto;
+    padding: 40px 50px;
+    background: url("../img/Header-bkg.jpg") no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.logo-top {
+
+}
+
+nav {
+
+}
+
+nav ul {
+    display: flex;
+
+}
+
+nav ul li {
+    list-style-type: none;
+    font-family: "GothamProLight", sans-serif;
+    font-size: 13px;
+    margin: 0 15px;
+    padding: 0 0 2px 0;
+}
+
+nav ul li:last-child {
+    border-bottom: 1px solid #ff0000;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.column {
+    width: 25%;
+}
+
+
