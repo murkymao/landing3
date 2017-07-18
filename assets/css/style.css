@@ -14,7 +14,64 @@
     font-weight: normal;
 }
 
-.container{
+@font-face {
+    font-family: "TheanoDidotRegular";
+    src: url("../fonts/TheanoDidotRegular/TheanoDidotRegular.eot");
+    src: url("../fonts/TheanoDidotRegular/TheanoDidotRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TheanoDidotRegular/TheanoDidotRegular.woff") format("woff"),
+    url("../fonts/TheanoDidotRegular/TheanoDidotRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+h2, h3 {
+    font-family: "TheanoDidotRegular", sans-serif;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 52px;
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+
+p {
+    margin-bottom: 18px;
+    font-family: "GothamProLight", sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+button p {
+    margin: 0;
+    font-family: "GothamProLight", sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+
+h2 + p {
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.p {
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+button {
+    margin: 52px 85px;
+    padding: 16px 44px;
+    border: 1px double #000000;
+}
+
+.container {
     width: 1400px;
     height: 2000px;
 
@@ -64,8 +121,39 @@ nav ul li a {
     color: #ffffff;
 }
 
+.content {
+    width: 1440px;
+    display: flex;
+}
+
 .column {
     width: 25%;
+    margin-top: 200px;
+    padding: 45px 0;
+
+}
+
+.starter {
+    background-color: #f5f5f5;
+}
+
+.professional {
+    background-color: #e5e5e5;
+}
+
+.competitive {
+    background-color: #cbcbcb;
+}
+
+.absolute {
+    background-color: #4c4c4b;
+    color: #ffffff;
+}
+
+.absolute button {
+    background-color: #4c4c4b;
+    color: #ffffff;
+    border-color: #ffffff;
 }
 
 
