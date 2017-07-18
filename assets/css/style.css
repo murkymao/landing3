@@ -38,22 +38,12 @@ h3 {
     font-size: 24px;
 }
 
-
 p {
     margin-bottom: 18px;
     font-family: "GothamProLight", sans-serif;
     font-size: 16px;
     text-align: center;
 }
-
-button p {
-    margin: 0;
-    font-family: "GothamProLight", sans-serif;
-    font-size: 18px;
-    text-align: center;
-}
-
-
 
 h2 + p {
     margin-bottom: 50px;
@@ -68,7 +58,11 @@ h2 + p {
 button {
     margin: 52px 85px;
     padding: 16px 44px;
-    border: 1px double #000000;
+    border: 2px double #000000;
+    font-family: "GothamProLight", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
 }
 
 .container {
@@ -123,6 +117,7 @@ nav ul li a {
 
 .content {
     width: 1440px;
+    padding: 0 50px;
     display: flex;
 }
 
@@ -130,18 +125,28 @@ nav ul li a {
     width: 25%;
     margin-top: 200px;
     padding: 45px 0;
-
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .starter {
     background-color: #f5f5f5;
 }
+.starter button {
+    background-color: #f5f5f5;
+}
 
 .professional {
+     background-color: #e5e5e5;
+ }
+.professional button {
     background-color: #e5e5e5;
 }
 
 .competitive {
+    background-color: #cbcbcb;
+}
+
+.competitive button {
     background-color: #cbcbcb;
 }
 
