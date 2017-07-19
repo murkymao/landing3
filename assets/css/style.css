@@ -24,6 +24,13 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "Didot";
+    src: url("../fonts/DidotItalic.ttf");
+    font-style: italic;
+    font-weight: normal;
+}
+
 .content-title {
     font-family: "TheanoDidotRegular", sans-serif;
     text-align: center;
@@ -31,9 +38,27 @@
     font-size: 28px;
 }
 
-.content-title span {
-    font-size: 24px;
+.header-title p {
+    font-size: 23px;
+    margin-top: 30px;
     margin-bottom: 0;
+}
+
+h1 {
+    font-family: "Didot", sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 72px;
+    color: #ffffff;
+}
+
+.header-title {
+    margin: 340px 0 0 300px;
+}
+
+.header-title p {
+    font-size: 23px;
+    color: #ffffff;
 }
 
 p {
@@ -66,7 +91,6 @@ button {
 .container {
     width: 1440px;
     height: 2700px;
-
 }
 
 header {
@@ -80,14 +104,6 @@ header {
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.logo-top {
-
-}
-
-nav {
-
 }
 
 nav ul {
