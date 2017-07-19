@@ -103,8 +103,6 @@ nav ul li {
     padding: 0 0 2px 0;
 }
 
-
-
 nav ul li a {
     text-decoration: none;
     color: #ffffff;
@@ -112,7 +110,8 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline #ff0000;
-    color: #ffffff;
+
+}
 
 .content {
     width: 1440px;
