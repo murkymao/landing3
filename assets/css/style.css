@@ -32,6 +32,7 @@
 }
 
 h1 {
+    margin: 335px 0 0 350px;
     font-family: "Didot", sans-serif;
     font-style: italic;
     font-weight: normal;
@@ -45,6 +46,14 @@ h2 {
     font-style: italic;
     font-weight: normal;
     font-size: 48px;
+}
+
+p {
+    margin: 30px 0 0 400px;
+    font-family: "GothamProLight";
+    font-size: 23px;
+    color: #ffffff;
+
 }
 
 button {
@@ -173,8 +182,8 @@ nav ul li a:hover {
     text-align: center;
 }
 
-.packages-details{
-    margin: 205px 0;
+.packages-details {
+    margin: 205px 0 0 0;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -195,15 +204,21 @@ nav ul li a:hover {
     font-family: "GothamProLight", sans-serif;
 }
 
-.box {
+.button-get-started {
+    margin-bottom: 200px;
+}
+
+.packages-details .box {
     width: 848px;
-    height: 50px;
+    min-height: 50px;
     margin-bottom: 2px;
     background-color: #eeeeee;
+    font-family: "GothamProLight", sans-serif;
 }
 
 details {
     position: relative;
+    padding: 15px;
 }
 
 summary::-webkit-details-marker {
@@ -214,11 +229,37 @@ summary::-webkit-details-marker {
 summary::after {
     content: '+';
     position: absolute;
-    left:  825px;
+    top: 15px;
+    left: 825px;
 }
 
 details[open] > summary::after {
     content: '-';
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+}
+
+.footer-copy-subscribe {
+    font-family: "GothamProLight", sans-serif;
+    font-size: 11px;
+    color: #939393;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    font-family: "GothamProLight", sans-serif;
+    font-size: 11px;
+}
+.footer-contact img {
+    width: 16px;
+    height: 10px;
+    margin-bottom: 5px;
+    align-self: center;
 }
 
 
