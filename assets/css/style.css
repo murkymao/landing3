@@ -176,4 +176,38 @@ nav ul li a:hover {
     border-color: #ffffff;
 }
 
+.content-2 {
+    margin: 205px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.content-2 div, h2, button {
+    align-self: center;
+}
+
+.content-2 button {
+    width: 200px;
+    height: 55px;
+    padding: 0;
+    border: 2px double #ffffff;
+    background-color: #de2c18;
+    color: #ffffff;
+    font-family: "GothamProLight", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.box {
+    width: 848px;
+    height: 50px;
+    margin-bottom: 2px;
+    background-color: #eeeeee;
+}
+
 
