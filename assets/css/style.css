@@ -203,7 +203,7 @@ nav ul li a:hover {
 }
 
 details {
-    display: flex;
+    position: relative;
 }
 
 summary::-webkit-details-marker {
@@ -213,6 +213,8 @@ summary::-webkit-details-marker {
 
 summary::after {
     content: '+';
+    position: absolute;
+    left:  825px;
 }
 
 details[open] > summary::after {
