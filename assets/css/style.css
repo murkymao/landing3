@@ -31,6 +31,53 @@
     font-weight: normal;
 }
 
+.container {
+    max-width: 1440px;
+    min-width: 1280px;
+    margin: 0 auto;
+    background: url("../img/Header-bkg.jpg") no-repeat;
+    background-size: 100%;
+    padding: 40px 50px;
+}
+
+header {
+    width: 100%;
+    height: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#menu-icon {
+    background-image: url("../img/menu-icon.png");
+    display: none;
+    width: 26px;
+    height: 19px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+    font-family: "GothamProLight", sans-serif;
+    font-size: 13px;
+    margin: 0 15px;
+    padding: 0 0 2px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline #ff0000;
+}
+
 h1 {
     margin: 335px 0 0 350px;
     font-family: "Didot", sans-serif;
@@ -64,55 +111,6 @@ button {
     font-size: 18px;
     text-align: center;
     cursor: pointer;
-}
-
-.container {
-    max-width: 1440px;
-    min-width: 1280px;
-    margin: 0 auto;
-    background: url("../img/Header-bkg.jpg") no-repeat;
-    background-size: 100%;
-    padding: 40px 50px;
-}
-
-header {
-    width: 100%;
-    height: 900px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#menu-icon {
-    background-image: url("../img/menu-icon.png");
-    display: hidden;
-    width: 26px;
-    height: 19px;
-}
-
-nav ul {
-    display: flex;
-}
-
-nav ul li {
-    list-style-type: none;
-    font-family: "GothamProLight", sans-serif;
-    font-size: 13px;
-    margin: 0 15px;
-    padding: 0 0 2px 0;
-}
-
-nav ul li a, #menu-icon {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-nav ul li a:hover,
-#menu-icon:hover {
-    text-decoration: underline #ff0000;
-
 }
 
 .content {
@@ -274,45 +272,47 @@ footer {
 
 /*mobiles*/
 
-@media screen and (max-width: 375px) {
+@media only screen and (max-width: 376px) {
+
+    h1 {
+        display: none;
+    }
 
     h2 {
         margin-bottom: 10px;
         font-family: "Didot", sans-serif;
         font-style: italic;
         font-weight: normal;
-        font-size: 18px;
+        font-size: 110px;
     }
 
     p {
-        margin: 10px 0 0 20px;
-        font-family: "GothamProLight", sans-serif;
-        font-size: 13px;
-        color: #ffffff;
-
+        display: none;
     }
 
     .container {
+        display: flex;
+        flex-direction: column;
         width: 375px;
         margin: 0 auto;
         background: url("../img/Header-bkg-mobile.png") no-repeat;
         background-size: 100%;
-        padding: 24px 30px;
+        padding: 60px 75px;
     }
 
     button {
-        margin: 52px auto;
-        padding: 16px 44px;
-        border: 3px double #000000;
+        margin: 152px auto;
+        padding: 46px 175px;
+        border: 13px double #000000;
         font-family: "GothamProLight", sans-serif;
-        font-size: 18px;
+        font-size: 58px;
         text-align: center;
         cursor: pointer;
     }
 
     header {
         width: 100%;
-        height: 559px;
+        height: 1800px;
         margin: 0 auto;
         display: flex;
         flex-wrap: nowrap;
@@ -331,4 +331,115 @@ footer {
         display: none;
     }
 
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        height: 1900px;
+        margin-bottom: 30px;
+        padding: 75px 0 30px 0;
+        box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+
+    .pricing-plan-title {
+        font-family: "TheanoDidotRegular", sans-serif;
+        text-align: center;
+        margin-top: 130px;
+        margin-bottom: 165px;
+        font-size: 125px;
+    }
+
+    .pricing-plan-price {
+        font-family: "GothamProLight", sans-serif;
+        text-align: center;
+        font-size: 70px;
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+
+    .pricing-plan-subtitle {
+        margin-bottom: 140px;
+        font-family: "GothamProLight", sans-serif;
+        font-size: 58px;
+        text-align: center;
+    }
+
+    .pricing-plan-description {
+        margin-bottom: 18px;
+        font-family: "GothamProLight", sans-serif;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .packages-details {
+        margin: 205px 0 0 0;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .button-get-started {
+        margin-bottom: 200px;
+    }
+
+    .packages-details .box {
+        width: 100%;
+        min-height: 150px;
+        margin-bottom: 10px;
+        background-color: #eeeeee;
+        font-family: "GothamProLight", sans-serif;
+    }
+
+    details {
+        position: relative;
+        padding: 15px;
+    }
+
+    summary::-webkit-details-marker {
+        display: none;
+        font-size: 20px;
+    }
+
+    summary::after {
+        content: '+';
+        position: absolute;
+        top: 15px;
+        left: 825px;
+    }
+
+    details[open] > summary::after {
+        content: '-';
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 32px;
+    }
+
+    .footer-copy-subscribe {
+        font-family: "GothamProLight", sans-serif;
+        font-size: 11px;
+        color: #939393;
+    }
+
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        font-family: "GothamProLight", sans-serif;
+        font-size: 11px;
+    }
+
+    .footer-contact img {
+        width: 16px;
+        height: 10px;
+        margin-bottom: 5px;
+        align-self: center;
+    }
 }
