@@ -100,7 +100,6 @@ p {
     font-family: "GothamProLight", sans-serif;
     font-size: 23px;
     color: #ffffff;
-
 }
 
 button {
@@ -345,6 +344,10 @@ footer {
         text-align: center;
     }
 
+    .column span {
+        font-size: 112px;
+    }
+
     .pricing-plan-title {
         font-family: "TheanoDidotRegular", sans-serif;
         text-align: center;
@@ -375,19 +378,6 @@ footer {
         text-align: center;
     }
 
-    .packages-details {
-        margin: 205px 0 0 0;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .button-get-started {
-        margin-bottom: 200px;
-    }
-
     .packages-details .box {
         width: 100%;
         min-height: 150px;
@@ -396,9 +386,21 @@ footer {
         font-family: "GothamProLight", sans-serif;
     }
 
+    .packages-details .button-get-started {
+        border: 10px double #ffffff;
+        background-color: #de2c18;
+        color: #ffffff;
+        font-family: "GothamProLight", sans-serif;
+    }
+
+    .box span {
+        font-size: 50px;
+    }
+
     details {
         position: relative;
-        padding: 15px;
+        padding: 50px 35px 35px 35px;
+        font-size: 50px;
     }
 
     summary::-webkit-details-marker {
@@ -409,8 +411,9 @@ footer {
     summary::after {
         content: '+';
         position: absolute;
-        top: 15px;
-        left: 825px;
+        top: 30px;
+        left: 1025px;
+        font-size: 80px;
     }
 
     details[open] > summary::after {
@@ -419,11 +422,12 @@ footer {
 
     footer {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         padding-top: 32px;
     }
 
     .footer-copy-subscribe {
+        display: none;
         font-family: "GothamProLight", sans-serif;
         font-size: 11px;
         color: #939393;
@@ -433,13 +437,14 @@ footer {
         display: flex;
         flex-direction: column;
         font-family: "GothamProLight", sans-serif;
-        font-size: 11px;
+        font-size: 40px;
+        margin-top: 30px;
     }
 
     .footer-contact img {
-        width: 16px;
-        height: 10px;
-        margin-bottom: 5px;
+        width: 55px;
+        height: 37px;
+        margin: 15px;
         align-self: center;
     }
 }
