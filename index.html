@@ -18,15 +18,12 @@
             </h1>
             <div class="header-subtitle">PRICING FOR ANY BUSINESS</div>
         </div>
-
-        <nav class="topnav" id="myTopnav">
-
+        <nav class="topnav" id="topnav">
             <a href="#">Work</a>
             <a href="#">About</a>
             <a href="#">How It Works</a>
             <a href="#">Pricing</a>
-            <a href="javascript:void(0);" style="font-size:28px;" class="icon" onclick="myFunction()">&#9776;</a>
-
+            <a href="javascript:void(0);" class="mobile-menu-icon" onclick="showMobileMenu()"></a>
         </nav>
     </header>
     <div class="content">
@@ -131,8 +128,8 @@
     </footer>
 </div>
 <script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
+    function showMobileMenu() {
+        var x = document.getElementById("topnav");
         if (x.className === "topnav") {
             x.className += " responsive";
         } else {

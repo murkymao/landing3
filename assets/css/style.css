@@ -62,13 +62,6 @@
         justify-content: space-between;
     }
 
-    #menu-icon {
-        background-image: url("../img/menu-icon.png");
-        display: none;
-        width: 26px;
-        height: 19px;
-    }
-
     .topnav {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -89,7 +82,7 @@
         text-decoration: underline #ff0000;
     }
 
-    .topnav .icon {
+    .topnav .mobile-menu-icon {
         display: none;
     }
 
@@ -324,10 +317,16 @@
         font-size: 18px;
     }
 
-    .topnav a.icon {
+    .topnav a.mobile-menu-icon {
         float: right;
         display: block;
+        font-size: 28px;
     }
+
+    .mobile-menu-icon:after {
+        content: '\2630';
+    }
+
 }
 
 @media screen and (max-width: 376px) {
@@ -401,7 +400,7 @@
         position: relative;
     }
 
-    .topnav.responsive .icon {
+    .topnav.responsive .mobile-menu-icon {
         position: absolute;
         right: 0;
         top: 0;
@@ -602,7 +601,6 @@
     }
 
     .footer-contact img {
-
         margin: 15px;
         -ms-flex-item-align: center;
         align-self: center;
