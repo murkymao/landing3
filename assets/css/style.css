@@ -35,8 +35,9 @@
 @media screen and (min-width: 377px) {
 
     .container {
-        max-width: 1440px;
-        min-width: 980px;
+        display: flex;
+        flex-direction: column;
+        min-width: 1060px;
         margin: 0 auto;
         background: url("../img/Header-bkg.jpg") no-repeat;
         background-size: 100%;
@@ -253,6 +254,10 @@
     details {
         position: relative;
         padding: 15px;
+    }
+
+    summary {
+        display: block;
     }
 
     summary::-webkit-details-marker {
@@ -542,6 +547,10 @@
         padding: 18px 10px 10px 10px;
         font-size: 13px;
         font-weight: bold;
+    }
+
+    summary {
+        display: block;
     }
 
     summary::-webkit-details-marker {
