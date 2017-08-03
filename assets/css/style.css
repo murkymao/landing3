@@ -399,7 +399,8 @@
     }
 
     .topnav.responsive {
-        position: relative;
+        position: absolute;
+        width: 305px;
     }
 
     .topnav.responsive .mobile-menu-icon {
